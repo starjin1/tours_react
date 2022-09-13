@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5eef5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #000051;
+    opacity: 0.9;
+
+}
+.title {
+    margin-bottom: 0.4rem;
+    color: #000051;;
+}
+.underline {
+    padding: 0.1rem 2.5rem;
+    background: #1e88e5;
+    margin-bottom: 3rem;
+}
+.article {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.8rem #bdbdbd;
+}
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.box {
+    background-color: #ffff;
+    padding: 2rem;
+    text-align: left;
+    /* 문단 맞추기 / flex 없이도 사용 가능 */
+}
+.name {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+}
+.price {
+    text-align: right;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+}
+.price_box {
+    color: #1565c0;
+    background: #e1f5fe;
+    padding: 0 0.3rem ;
+    border-radius: 1px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.info {
+    font-size: 0.85rem;
+    color: #424242;
+}
+.loading {
+    margin-top: 3rem;
+}
+.info_btn {
+    border: none;
+    background: white;
+    color:#1565c0;
+    font-weight: 500;
+    cursor: pointer;
+}
+.delete_btn {
+    border: none;
+    padding: 0.5rem 4rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #90caf9,#42a5f5);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.btn_box {
+    display: flex;
+    flex-direction: column;
+    
+}
+.non_main {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+
+}
+
+@media (width <989px) {
+    .article { 
+        width: 55%;
+    }
+
+}
+
+@media (width <= 660px) {
+    .article { 
+        width: 65%;
+    }
+
+    .price {
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    
+    }
+
+}
+
+@media (width <= 484px) {
+    .article { 
+        width: 79%;
+    }
+
+
+
+}
